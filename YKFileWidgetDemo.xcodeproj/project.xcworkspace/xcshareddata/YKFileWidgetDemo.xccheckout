@@ -10,6 +10,8 @@
 	<string>YKFileWidgetDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>29A62AB667CA633C6B6DF185A94C0DFF1C611E1E</key>
+		<string>github.com:GeorgeXu/YKFileWidgetDemo_IOS.git</string>
 		<key>335AAE145285BA284BD6DAA0B0545844943A9355</key>
 		<string>https://github.com/gokuai/yunku-ipad.git</string>
 		<key>DF22EDB05F1CF9C47A50457E3B143819DC1716F6</key>
@@ -19,17 +21,19 @@
 	<string>YKFileWidgetDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>29A62AB667CA633C6B6DF185A94C0DFF1C611E1E</key>
+		<string>../..</string>
 		<key>335AAE145285BA284BD6DAA0B0545844943A9355</key>
 		<string>../../../yunku-ipad</string>
 		<key>DF22EDB05F1CF9C47A50457E3B143819DC1716F6</key>
-		<string>../..</string>
+		<string>../../../YKFileWidgetDemo</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gokuai/YKFileWidgetDemo.git</string>
+	<string>github.com:GeorgeXu/YKFileWidgetDemo_IOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DF22EDB05F1CF9C47A50457E3B143819DC1716F6</string>
+	<string>29A62AB667CA633C6B6DF185A94C0DFF1C611E1E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -39,6 +43,14 @@
 			<string>DF22EDB05F1CF9C47A50457E3B143819DC1716F6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>YKFileWidgetDemo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>29A62AB667CA633C6B6DF185A94C0DFF1C611E1E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YKFileWidgetDemo_IOS</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

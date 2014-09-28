@@ -17,7 +17,7 @@
     [super viewDidLoad];
     CGRect frame = [UIScreen mainScreen].applicationFrame;
     UIWebView *webView = [[UIWebView alloc]initWithFrame:frame];
-    NSString *requestURL = [[NSString alloc]initWithFormat:@"http://yunku.goukuai.cn/widget/gkc?mode=chooser&link_type=download_link&client_id=ffb1970084cf5f49a76e3ee879786c9b&redirect_uri=%@%@",PROTOCOL,REDIRECT_PATH];
+    NSString *requestURL = [[NSString alloc]initWithFormat:@"http://zk.goukuai.cn/widget/gkc?hide_header=1&client_id=ffb1970084cf5f49a76e3ee879786c9b&redirect_uri=%@%@",PROTOCOL,REDIRECT_PATH];
     NSLog(@"------REQUEST URL %@--------",requestURL);
     webView.delegate = self;
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]]];
@@ -45,9 +45,17 @@
                 NSString *value = pairComponents[1];
                 queryStringDictionary[key] = value;
             }
-            SBJsonParser * parser = [[SBJsonParser alloc]init];
-            NSMutableDictionary *file = [parser objectWithString:[queryStringDictionary[@"file"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-            NSLog(@"file:%@", [file description]);
+            NSString * strFile = [queryStringDictionary[@"file"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            
+            if ([strFile length]) {
+                //选择文件
+                SBJsonParser * parser = [[SBJsonParser alloc]init];
+                NSMutableDictionary *file = [parser objectWithString:strFile];
+                NSLog(@"file:%@", [file description]);
+            }else{
+                //取消
+            }
+          
         }
         return NO;
     }

@@ -12,6 +12,7 @@
 #define PROTOCOL @"ykwidget:"
 #define REDIRECT_PATH @"select_file"
 
+
 @interface FileWidgetViewController : UIViewController<UIWebViewDelegate>
 {
     UIWebView *_webView;
