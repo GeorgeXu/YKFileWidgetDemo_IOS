@@ -17,7 +17,7 @@
     [super viewDidLoad];
     CGRect frame = [UIScreen mainScreen].applicationFrame;
     UIWebView *webView = [[UIWebView alloc]initWithFrame:frame];
-    NSString *requestURL = [[NSString alloc]initWithFormat:@"http://zk.goukuai.cn/widget/gkc?menu=download,link&client_id=ffb1970084cf5f49a76e3ee879786c9b&redirect_uri=%@%@",PROTOCOL,REDIRECT_PATH];
+    NSString *requestURL = [[NSString alloc]initWithFormat:@"http://yunku.gokuai.com/widget/gkc?menu=download,link&client_id=ffb1970084cf5f49a76e3ee879786c9b&redirect_uri=%@%@",PROTOCOL,REDIRECT_PATH];
     NSLog(@"------REQUEST URL %@--------",requestURL);
     webView.delegate = self;
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:requestURL]]];
